@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+      <a class="navbar-brand mr-1" href="index.html">[INSERT TITLE]</a>
+
+      	  <a class="nav-link" href="index.html" style="color: darkgray">
+            <span>Will add tabs here that link to certain parts of the pages</span>
+          </a>
+          <a class="nav-link" href="index.html" style="color: darkgray">
+            <span>[TAB]</span>
+          </a>
+          <a class="nav-link" href="index.html" style="color: darkgray">
+            <span>[TAB]</span>
+          </a>
+    </nav>
+
+    <div id="wrapper">
+
+      <div id="content-wrapper">
+
+        <div class="container-fluid">
+
+          <h2>Introduction</h2>
+          Discuss what COVID-19 is, the fact that we need to analyze its economic impacts [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+          
+          <hr>
+
+          <h2>Unemployment Statistics and Visualization</h2>
+          Opening statement here. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+
+          <p></p>
+
+          <!-- Interactive Map -->
+          <div class='card mb-3'>
+            This will eventually be the interactive map of the US with unemployment stats; I just haven't developed it yet.
+          </div>
+
+          <div class='row'>
+
+            <!-- Unemployment Annual Trends -->
+            <div class='col-lg-6'>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-line"></i>
+                  Unemployment Annual Trends</div>
+                  <div class="card-body">
+                    <canvas id="unemployment_years"></canvas>
+                  </div>
+              </div>
+            </div>
+
+            <!-- Unemployment Monthly Trends 2020 -->
+            <div class='col-lg-6'>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-bar"></i>
+                  Unemployment Monthly Trends 2020</div>
+                  <div class="card-body">
+                    <canvas id="unemployment_months"></canvas>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+
+          Explain how it's clear that unemployment spiked in April, May, and June 2020, which were the prime months of COVID-19 unemployment devastations [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+
+          <hr>
+
+          <h2>The Wage Gap</h2>
+          Transition to the wage gap. Explain its history/background and how it's calculated, mention that it pervades societies in America and around the world. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+
+          <p></p>
+
+          <div class='row'>
+
+          <!-- Male vs. Female -->
+            <div class='col-lg-6'>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-line"></i>
+                  Male vs. Female</div>
+                  <div class="card-body">
+                    <canvas id="male_female"></canvas>
+                  </div>
+              </div>
+            </div>
+
+            <!-- White vs. Black vs. Hispanic -->
+            <div class='col-lg-6'>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-line"></i>
+                  White vs. Black vs. Hispanic</div>
+                  <div class="card-body">
+                    <canvas id="white_black_hispanic"></canvas>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+
+          Closing statement here. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+
+          <hr>
+
+          <h2>Combining Two Economic Ideas</h2>
+          Talk about why we need to combine unemployment and wage gaps and analyze them together. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+
+          <p></p>
+
+          <!-- DataTables Example -->
+          <div class='row'>
+
+            <div class='col-lg-7'>
+	            <div class="card mb-3">
+	              <div class="card-header">
+	                <i class="fas fa-table"></i>
+	                Employment Breakdown by Industry, Gender, and Race</div>
+	              <div class="card-body">
+	                <div class="table-responsive">
+	                  <table class="table table-bordered" id="industry_race" cellspacing="0">
+	                    <thead>
+	                      <tr>
+	                        <th>Industry</th>
+                          <th>Average Hourly Wage of Industry</th>
+	                        <th>% Women</th>
+	                        <th>% White</th>
+	                        <th>% Black</th>
+                          <th>% Hispanic</th>
+	                      </tr>
+	                    </thead>
+	                    <tbody>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                        </tr>
+	                      <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                        </tr>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                        </tr>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                        </tr>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                        </tr>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                        </tr>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                        </tr>
+	                    </tbody>
+	                  </table>
+	                </div>
+	              </div>
+	            </div>
+            </div>
+
+            <div class="col-lg-5 d-flex flex-column flex-grow-1">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-bar"></i>
+                  Average Hourly Wage by Gender, Race</div>
+                <div class="card-body">
+                  <canvas id="race_wage"></canvas>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          
+          <div class='row'>
+
+            <!-- Most-Affected Industry Employment -->
+            <div class="col-lg-6">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Most-Affected Industry Employment</div>
+                <div class="card-body">
+                  <canvas id="employment_breakdown_highest"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- Least-Affected Industry Employment -->
+            <div class="col-lg-6">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Least-Affected Industry Employment</div>
+                <div class="card-body">
+                  <canvas id="employment_breakdown_lowest"></canvas>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h2>COVID-19 Impact Score</h2>
+
+          <div class='row'>
+
+            <!-- COVID-19 Impact Score Explanation -->
+            <div class='col-lg-6'>
+              COVID-19 Impact Score Explanation. Describe and show how to calculate impact schore and what it indicates about women and minorities. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+            </div>
+
+            <!-- COVID-19 Impact Score -->
+            <div class='col-lg-6'>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-bar"></i>
+                  COVID-19 Impact Scores by Gender, Race</div>
+                  <div class="card-body">
+                    <canvas id="impact_score"></canvas>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+
+          Closing statement here. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+
+          <hr>
+
+          <h2>Conclusion</h2>
+
+          Explain the (possible) correlations between industries facing the greatest unemployment rates and the wages of those industries. Connect these wages to the gender/race representations per industry and gender/race-specific hourly wages. For example, "leisure and hospitality," the industry that has sufferred the most economically due to COVID-19, also has a very low average wage of ____ (one of the lowest). From the % representation pie chart shown above, we see that this industry has a higher proportion of blacks, and this group has an average hourly wage of ____, whereas whites have a significantly higher hourly wage. Therefore, job losses will hurt this group more than others.
+
+        </div>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="graphs/industry_race.js"></script>
+    <script src="graphs/race_wage.js"></script>
+    <script src="graphs/scanpath.js"></script>
+    <script src="graphs/chart-area-demo.js"></script>
+    <script src="graphs/chart-bar-demo.js"></script>
+    <script src="graphs/chart-bar-demo-2.js"></script>
+    <script src="graphs/chart-scatter-demo.js"></script>
+    <script src="graphs/chart-scatter-demo-2.js"></script>
+    <script src="graphs/chart-pie-demo.js"></script>
+    <script src="graphs/chart-pie-demo-2.js"></script>
+    <script src="graphs/chart-pie-demo-3.js"></script>
+    <script src="graphs/chart-pie-demo-4.js"></script>
+    <script src="graphs/unemployment_years.js"></script>
+    <script src="graphs/unemployment_months.js"></script>
+    <script src="graphs/male_female.js"></script>
+    <script src="graphs/white_black_hispanic.js"></script>
+    <script src="graphs/employment_breakdown_highest.js"></script>
+    <script src="graphs/employment_breakdown_lowest.js"></script>
+    <script src="graphs/impact_score.js"></script>
+
+  </body>
+
+</html>
