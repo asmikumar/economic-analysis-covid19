@@ -23,13 +23,26 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
 
+    <!-- <script type="text/javascript" src="./map_js.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.7"></script> -->
+
+<div id="container"></div>
+
+
   </head>
 
   <body id="page-top">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.html">[INSERT TITLE]</a>
+      <a class="navbar-brand mr-1" href="index.html">Economic Impacts of COVID-19</a>
 
       	  <a class="nav-link" href="index.html" style="color: darkgray">
             <span>Will add tabs here that link to certain parts of the pages</span>
@@ -49,54 +62,155 @@
         <div class="container-fluid">
 
           <h2>Introduction</h2>
-          Discuss what COVID-19 is, the fact that we need to analyze its economic impacts [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+          Discuss what COVID-19 is, the fact that we need to analyze its economic impacts [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
           
           <hr>
 
           <h2>Unemployment Statistics and Visualization</h2>
-          Opening statement here. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+          Opening statement here. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+
+          <p></p>
+
+          <div class='row'>
+
+            <div class='col-lg-6'>
+              <h4>What are unemployment and unemployment rate?</h4>
+              [TEXT HERE]
+            </div>
+
+            <div class='col-lg-6'>
+              <h4>How is it calculated?</h4>
+              [TEXT HERE]
+            </div>
+
+          </div>
+
+          <p></p>
+
+          <div class='row'>
+
+            <div class='col-lg-6'>
+              <h4>Why does it exist?</h4>
+              [TEXT HERE]
+            </div>
+
+            <div class='col-lg-6'>
+              <h4>How does COVID-19 come into play?</h4>
+              [TEXT HERE]
+            </div>
+
+          </div>
 
           <p></p>
 
           <!-- Interactive Map -->
-          <div class='card mb-3'>
+          <!-- <div class='card mb-3'>
             This will eventually be the interactive map of the US with unemployment stats; I just haven't developed it yet.
-          </div>
+          </div> -->
 
-          <div class='row'>
+          <h4>What's the goal of these visualizations?</h4>
+          We are trying to understand which industries are impacted most by COVID-19. To do that, we must look at the percent increases in unemployment from before the pandemic to after the preliminary impacts are evident. Therefore, we utilize February (the final month where the U.S. economy was stable) and April (the month where industries saw the highest unemployment rates). After identifying specific industries with the greatest – and least – percent increases in unemployment, we will be able to analyze their gender and racial makeups and investigate whether COVID-19 is likely to affect certain groups more severely than others? <i>(Note that some industries are not included in this study due to lack of sufficient unemployment rate or employee data.)</i>
+
+          <p></p>
+
+          <!-- <div class='row'> -->
 
             <!-- Unemployment Annual Trends -->
-            <div class='col-lg-6'>
+            <!-- <div class='col-lg-6'> -->
               <div class="card mb-3">
                 <div class="card-header">
                   <i class="fas fa-chart-line"></i>
-                  Unemployment Annual Trends</div>
+                  Unemployment Annual Trends (%)</div>
                   <div class="card-body">
                     <canvas id="unemployment_years"></canvas>
                   </div>
               </div>
-            </div>
+            <!-- </div> -->
 
-            <!-- Unemployment Monthly Trends 2020 -->
-            <div class='col-lg-6'>
+            <!-- <div class='col-lg-6'> -->
               <div class="card mb-3">
                 <div class="card-header">
-                  <i class="fas fa-chart-bar"></i>
-                  Unemployment Monthly Trends 2020</div>
-                  <div class="card-body">
-                    <canvas id="unemployment_months"></canvas>
+                  <i class="fas fa-table"></i>
+                  Percent Increase</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered" id="percent_increase">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col" style='background-color: #c3e6cb'>Construction</th>
+                          <th scope="col" style='background-color: #f5c6cb'>Education and Health Services</th>
+                          <th scope="col" style='background-color: #c3e6cb'>Financial Activities</th>
+                          <th scope="col">Information</th>
+                          <th scope="col" style='background-color: #f5c6cb'>Leisure and Hospitality</th>
+                          <th scope="col">Manufacturing</th>
+                          <th scope="col" style='background-color: #c3e6cb'>Professional Business Services</th>
+                          <th scope="col" style='background-color: #f5c6cb'>Retail Trade</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">February 2020 %</th>
+                          <td style='background-color: #c3e6cb'>5.5</td>
+                          <td style='background-color: #f5c6cb'>2.4</td>
+                          <td style='background-color: #c3e6cb'>1.6</td>
+                          <td>2.6</td>
+                          <td style='background-color: #f5c6cb'>5.7</td>
+                          <td>3.9</td>
+                          <td style='background-color: #c3e6cb'>4.4</td>
+                          <td style='background-color: #f5c6cb'>3.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">April 2020 %</th>
+                          <td style='background-color: #c3e6cb'>16.6</td>
+                          <td style='background-color: #f5c6cb'>10.9</td>
+                          <td style='background-color: #c3e6cb'>5.4</td>
+                          <td>11.0</td>
+                          <td style='background-color: #f5c6cb'>39.3</td>
+                          <td>13.2</td>
+                          <td style='background-color: #c3e6cb'>9.8</td>
+                          <td style='background-color: #f5c6cb'>18.6</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">% Increase</th>
+                          <td style='background-color: #c3e6cb'>201.8</td>
+                          <td style='background-color: #f5c6cb'>354.2</td>
+                          <td style='background-color: #c3e6cb'>237.5</td>
+                          <td>323.1</td>
+                          <td style='background-color: #f5c6cb'>589.5</td>
+                          <td>238.5</td>
+                          <td style='background-color: #c3e6cb'>122.7</td>
+                          <td style='background-color: #f5c6cb'>431.4</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
+                </div>
               </div>
-            </div>
+            <!-- </div> -->
 
+          The industries highlighted in red represent those with the highest unemployment rate increases, and similarly, the industries highlighted in green represent those with the lowest unemployment rate increases. Now, let's take the most critically-impacted industries and see what happened to their unemployment rates at a more granular level.
+
+          <p></p>
+
+          <!-- </div> -->
+
+          <!-- Unemployment Monthly Trends 2020 -->
+          <div class="card mb-3" style="height: 500px">
+            <div class="card-header">
+              <i class="fas fa-chart-bar"></i>
+              Unemployment Monthly Trends 2020 (%)</div>
+              <div class="card-body">
+                <canvas id="unemployment_months"></canvas>
+              </div>
           </div>
 
-          Explain how it's clear that unemployment spiked in April, May, and June 2020, which were the prime months of COVID-19 unemployment devastations [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
-
+          <h4>Let's isolate the COVID-19 region.</h4>
+          We can examine the top three affected industries and see how they fare from February to June in terms of unemployment rate. In February, before the economic downfall, rates are normal, close to what they have been for the last several years. In March, we observe a slight incline, hinting that something bigger is approaching. As COVID-19 takes its first nationwide toll, we see unemployment rates in April drastically spike to about four times greater than they were the former month. Reflecting unemployment benefits, government policies, and the race to open up jobs and businesses once again in the midst of a pandemic, May and June indicate lower unemployment rates. Because COVID-19 is the the only possible major propagator for this turn of events, we can conclude that it alone inflicted this serious economic damage from which we will likely struggle to recover.
           <hr>
 
           <h2>The Wage Gap</h2>
-          The <i>wage gap</i> pervades societies in America and around the world.
+          The <i>wage gap</i> pervades societies in America and around the world. It results from several factors, including gender, race and ethnicity, disability, access to education, and age.
 
           <p></p>
 
@@ -104,7 +218,7 @@
 
             <div class='col-lg-6'>
               <h4>What is the wage gap?</h4>
-              On average, women and minorities earn less than men in every single occupation for which there is sufficient data provided. In 2018, women made only 82 cents to every dollar made by men (a gender wage gap of 18 percent). For minorities and women of color specifically, the wage gap is even wider. Since the Equal Pay Act was signed in 1963, the wage gap has been closing at an exceedingly slow rate. (Note: Asians are not included in this study due to lack of sufficient wage gap data.)
+              On average, women and minorities earn less than men in every single occupation for which there is sufficient data provided. In 2018, women made only 82 cents to every dollar made by men (a gender wage gap of 18%). For minorities and women of color specifically, the wage gap is even wider. Since the Equal Pay Act was signed in 1963, the wage gap has been closing at an exceedingly slow rate. <i>(Note: Asians and other races are not included in this study due to lack of sufficient wage gap data.)</i>
             </div>
 
             <div class='col-lg-6'>
@@ -160,12 +274,12 @@
 
           </div>
 
-          Closing statement here. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+          Closing statement here. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
 
           <hr>
 
           <h2>Combining Two Economic Ideas</h2>
-          Talk about why we need to combine unemployment and wage gaps and analyze them together. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+          Talk about why we need to combine unemployment and wage gaps and analyze them together. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
 
           <p></p>
 
@@ -270,7 +384,7 @@
           
           <div class='row'>
 
-            <!-- Most-Affected Industry Employment -->
+            <!-- Most-Affected Industry Employment, determined by greatest % unemployment difference between February and April -->
             <div class="col-lg-6">
               <div class="card mb-3">
                 <div class="card-header">
@@ -304,7 +418,7 @@
 
             <!-- COVID-19 Impact Score Explanation -->
             <div class='col-lg-6'>
-              COVID-19 Impact Score Explanation. Describe and show how to calculate impact schore and what it indicates about women and minorities. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+              COVID-19 Impact Score Explanation. Describe and show how to calculate impact schore and what it indicates about women and minorities. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
             </div>
 
             <!-- COVID-19 Impact Score -->
@@ -321,13 +435,13 @@
 
           </div>
 
-          Closing statement here. [INSRT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+          Closing statement here. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
 
           <hr>
 
-          <h2>Conclusion</h2>
+          <h2>Conclusions</h2>
 
-          Explain the (possible) correlations between industries facing the greatest unemployment rates and the wages of those industries. Connect these wages to the gender/race representations per industry and gender/race-specific hourly wages. For example, "leisure and hospitality," the industry that has sufferred the most economically due to COVID-19, also has a very low average wage of ____ (one of the lowest). From the % representation pie chart shown above, we see that this industry has a higher proportion of blacks, and this group has an average hourly wage of ____, whereas whites have a significantly higher hourly wage. Therefore, job losses will hurt this group more than others.
+          Explain the (possible) correlations between industries facing the greatest unemployment rates and the wages of those industries. Connect these wages to the gender/race representations per industry and gender/race-specific hourly wages. For example, "leisure and hospitality," the industry that has sufferred the most economically due to COVID-19, also has a very low average wage of ____ (one of the lowest). From the % representation pie chart shown above, we see that this industry has a higher proportion of blacks, and this group has an average hourly wage of ____, whereas whites have a significantly higher hourly wage. Therefore, job losses will hurt this group more than others. Potential future work ideas: use wage gap data that breaks down minority races by gender as well. 
 
         </div>
 
@@ -359,6 +473,7 @@
 
     <!-- Demo scripts for this page-->
     <script src="graphs/unemployment_years.js"></script>
+    <script src="graphs/percent_increase.js"></script>
     <script src="graphs/unemployment_months.js"></script>
     <script src="graphs/male_female.js"></script>
     <script src="graphs/white_black_hispanic.js"></script>

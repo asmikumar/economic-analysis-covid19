@@ -6,7 +6,7 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 var line_chart = document.getElementById("white_black_hispanic");
 
 var dataFirst = {
-    label: "Car A - Speed (mph)",
+    label: "White vs. Black % Gap",
     data: [0, 59, 75, 20, 20, 55, 40],
     lineTension: 0,
     fill: false,
@@ -14,7 +14,7 @@ var dataFirst = {
   };
 
 var dataSecond = {
-    label: "Car B - Speed (mph)",
+    label: "White vs. Hispanic % Gap",
     data: [20, 15, 60, 60, 65, 30, 70],
     lineTension: 0,
     fill: false,

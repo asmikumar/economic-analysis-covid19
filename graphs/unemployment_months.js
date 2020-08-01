@@ -7,15 +7,27 @@ var ctx = document.getElementById("unemployment_months");
 var unemployment_months = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["April", "May", "June"],
-    datasets: [{
-      label: "Revenue",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
-      data: [7841, 9821, 14984],
-    }],
+    labels: ["February", "March", "April", "May", "June"],
+    datasets: [
+        {
+            label: "Leisure and Hospitality",
+            backgroundColor: "rgb(204,37,41)",
+            data: [5.7,8.1,39.3,35.9,28.9]
+        },
+        {
+            label: "Retail Trade",
+            backgroundColor: "rgb(132,186,91)",
+            data: [3.5,5.3,18.6,16.6,12.0]
+        },
+        {
+            label: "Education and Health Services",
+            backgroundColor: "rgb(218,124,48)",
+            data: [2.4,3.2,10.9,10.1,8.6]
+        }
+    ],
   },
   options: {
+    maintainAspectRatio: false,
     scales: {
       xAxes: [{
         time: {
@@ -31,7 +43,7 @@ var unemployment_months = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15000,
+          max: 40,
           maxTicksLimit: 5
         },
         gridLines: {
