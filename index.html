@@ -23,18 +23,7 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
 
-    <!-- <script type="text/javascript" src="./map_js.js"></script>
-    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
-    <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script> -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.7"></script> -->
-
-<div id="container"></div>
-
+    <div id="container"></div>
 
   </head>
 
@@ -44,14 +33,14 @@
 
       <a class="navbar-brand mr-1" href="index.html">Economic Impacts of COVID-19</a>
 
-      	  <a class="nav-link" href="index.html" style="color: darkgray">
-            <span>Will add tabs here that link to certain parts of the pages</span>
+      	  <a class="nav-link" href="unemployment.html" style="color: darkgray">
+            <span>Unemployment Statistics and Visualizations</span>
           </a>
-          <a class="nav-link" href="index.html" style="color: darkgray">
-            <span>[TAB]</span>
+          <a class="nav-link" href="wage_gap.html" style="color: darkgray">
+            <span>The Wage Gap</span>
           </a>
-          <a class="nav-link" href="index.html" style="color: darkgray">
-            <span>[TAB]</span>
+          <a class="nav-link" href="combination.html" style="color: darkgray">
+            <span>Combining Two Economic Ideas</span>
           </a>
     </nav>
 
@@ -61,393 +50,32 @@
 
         <div class="container-fluid">
 
-          <h2>Introduction</h2>
-          Discuss what COVID-19 is, the fact that we need to analyze its economic impacts [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
-          
-          <hr>
-
-          <h2>Unemployment Statistics and Visualization</h2>
-          Opening statement here. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+          <h2>COVID-19: A World Evolving</h2>
+          In a perfect world, economic impact studies would be conducted only to analyze the effects of positive events: expansion of a local manufacturer, increase in education attainment, or a reduction in the poverty rate are a few examples. Unfortunately, sometimes negative events must also be identified and measured; one such event is the current COVID-19.
 
           <p></p>
 
-          <div class='row'>
-
-            <div class='col-lg-6'>
-              <h4>What are unemployment and unemployment rate?</h4>
-              Unemployment occurs when a person actively searching for work is unable to find it. Unemployment is often used to measure the health of an economy. The most frequent measure of unemployment is the unemployment rate, which is the number of unemployed people divided by the number of people in the labor force. High rates of unemployment can signal of economic distress, but extremely low rates of unemployment may indicate an overworked economy.
-            </div>
-
-            <div class='col-lg-6'>
-              <h4>How is it calculated?</h4>
-              [TEXT HERE]
-            </div>
-
-          </div>
+          <h4>What is COVID-19?</h4>
+          Coronavirus disease (COVID-19) is an infectious disease that originated in Wuhan, China and rapidly spread throughout the world because of human interaction, travel, and physical contact. It is a newly discovered coronavirus, which is a large group of diseases that can infect both animals and humans. Check out the <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" style='color: blue'><u>World Health Organization</u></a> page and the <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html" style='color: blue'><u>CDC's list of FAQs</u></a> for more information on this pandemic.
 
           <p></p>
 
-          <div class='row'>
+          <h4>How has it impacted us, and what does this study aim to do?</h4>
+          On May 11, 2020, COVID-19 was declared as a global pandemic, and since then, it has continued to wreak havoc around the world. Since the early months of 2020, the U.S. has seen more than its fair share of economic downturns. This study combines two perspectives – unemployment rates and wage gaps – to understand if certain industries and people could be more vulnerable to its effects than others, in addition to what these insights can say about Americans. While the full extent of the pandemic is still yet to be seen, many communities, businesses, and governments are scrambling to assess the economic damage. Liek them, we can conduct our own study.
 
-            <div class='col-lg-6'>
-              <h4>Why does it exist?</h4>
-              [TEXT HERE]
-            </div>
+          <style>
+            .center {
+                text-align: center;
+            }
+          </style>
 
-            <div class='col-lg-6'>
-              <h4>How does COVID-19 come into play?</h4>
-              During COVID-19, the U.S. economy was the most negatively impacted out of all affluent countries, resulting in tens of millions of people losing their jobs, and this statistic continues to rise and fall during these changing times. Some industries are affected differently depending on the requirements and interests of the people, and this is a main topic we address in this study.
-            </div>
-
-          </div>
-
-          <p></p>
-
-          <!-- Interactive Map -->
-          <!-- <div class='card mb-3'>
-            This will eventually be the interactive map of the US with unemployment stats; I just haven't developed it yet.
-          </div> -->
-
-          <h4>What's the goal of these visualizations?</h4>
-          We are trying to understand which industries are impacted most by COVID-19. To do that, we must look at the percent increases in unemployment from before the pandemic to after the preliminary impacts are evident. Therefore, we utilize February (the final month where the U.S. economy was stable) and April (the month where industries saw the highest unemployment rates). After identifying specific industries with the greatest – and least – percent increases in unemployment, we will be able to analyze their gender and racial makeups and investigate whether COVID-19 is likely to affect certain groups more severely than others? <i>(Note: some industries are not included in this study due to lack of sufficient unemployment rate or employee data.)</i>
-
-          <p></p>
-
-          <!-- <div class='row'> -->
-
-            <!-- Unemployment Annual Trends -->
-            <!-- <div class='col-lg-6'> -->
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-line"></i>
-                  Unemployment Annual Trends (%)</div>
-                  <div class="card-body">
-                    <canvas id="unemployment_years"></canvas>
-                  </div>
-              </div>
-            <!-- </div> -->
-
-            <!-- <div class='col-lg-6'> -->
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-table"></i>
-                  Percent Increase</div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-bordered" id="percent_increase">
-                      <thead>
-                        <tr>
-                          <th scope="col"></th>
-                          <th scope="col" style='background-color: #c3e6cb'>Construction</th>
-                          <th scope="col" style='background-color: #f5c6cb'>Education and Health Services</th>
-                          <th scope="col" style='background-color: #c3e6cb'>Financial Activities</th>
-                          <th scope="col">Information</th>
-                          <th scope="col" style='background-color: #f5c6cb'>Leisure and Hospitality</th>
-                          <th scope="col">Manufacturing</th>
-                          <th scope="col" style='background-color: #c3e6cb'>Professional Business Services</th>
-                          <th scope="col" style='background-color: #f5c6cb'>Retail Trade</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">February 2020 %</th>
-                          <td style='background-color: #c3e6cb'>5.5</td>
-                          <td style='background-color: #f5c6cb'>2.4</td>
-                          <td style='background-color: #c3e6cb'>1.6</td>
-                          <td>2.6</td>
-                          <td style='background-color: #f5c6cb'>5.7</td>
-                          <td>3.9</td>
-                          <td style='background-color: #c3e6cb'>4.4</td>
-                          <td style='background-color: #f5c6cb'>3.5</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">April 2020 %</th>
-                          <td style='background-color: #c3e6cb'>16.6</td>
-                          <td style='background-color: #f5c6cb'>10.9</td>
-                          <td style='background-color: #c3e6cb'>5.4</td>
-                          <td>11.0</td>
-                          <td style='background-color: #f5c6cb'>39.3</td>
-                          <td>13.2</td>
-                          <td style='background-color: #c3e6cb'>9.8</td>
-                          <td style='background-color: #f5c6cb'>18.6</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">% Increase</th>
-                          <td style='background-color: #c3e6cb'>201.8</td>
-                          <td style='background-color: #f5c6cb'>354.2</td>
-                          <td style='background-color: #c3e6cb'>237.5</td>
-                          <td>323.1</td>
-                          <td style='background-color: #f5c6cb'>589.5</td>
-                          <td>238.5</td>
-                          <td style='background-color: #c3e6cb'>122.7</td>
-                          <td style='background-color: #f5c6cb'>431.4</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            <!-- </div> -->
-
-          The industries highlighted in red represent those with the highest unemployment rate increases, and similarly, the industries highlighted in green represent those with the lowest unemployment rate increases. Now, let's take the most critically-impacted industries and see what happened to their unemployment rates at a more granular level.
-
-          <p></p>
-
-          <!-- </div> -->
-
-          <!-- Unemployment Monthly Trends 2020 -->
-          <div class="card mb-3" style="height: 500px">
-            <div class="card-header">
-              <i class="fas fa-chart-bar"></i>
-              Unemployment Monthly Trends 2020 (%)</div>
-              <div class="card-body">
-                <canvas id="unemployment_months"></canvas>
-              </div>
-          </div>
-
-          <h4>Let's isolate the COVID-19 region.</h4>
-          We can examine the top three affected industries and see how they fare from February to June in terms of unemployment rate. In February, before the economic downfall, rates are normal, close to what they have been for the last several years. In March, we observe a slight incline, hinting that something bigger is approaching. As COVID-19 takes its first nationwide toll, we see unemployment rates in April drastically spike to about four times greater than they were the former month. Reflecting unemployment benefits, government policies, and the race to open up jobs and businesses once again in the midst of a pandemic, May and June indicate lower unemployment rates. Because COVID-19 is the the only possible major propagator for this turn of events, we can conclude that it alone inflicted this serious economic damage from which we will likely struggle to recover.
-
-          <p></p>
-
-          <h4>What insights can we glean about the American people from these results?</h4>
-          It appears that the industries that rely on travel have suffered the most. Leisure and Hospitality includes sectors such as accomodation and food services; amusement, gambling, and recreation areas; and arts and entertainment centers, which all focus on people leaving the comfort of their (safe) homes and venturing out into a world potentially saturated with the COVID-19 virus. People cut off many forms of gathering, entertainment, and vacationing in attempts to keep safe. We can also make a similar conclusion from Retail Trade, which includes places like malls, grocery stores, clothing stores, material and supply dealers, electronic stores, gas stations and convenience stores, and many more. Again, we see that these rely on people traveling, revealing that people thought their chance of contracting COVID-19 would reduce significantly if they stayed home. This is a true statement, but we may soon see this industries begin to rise if and when people give up on safety measures to try to return to former daily life.
+          <p class="center">
+          <img src="https://i.pinimg.com/originals/b2/24/d9/b224d9a70972e0a17a29e7e8117d3536.png" style='height: 400px; width: 400px'>
+          </p>
 
           <hr>
 
-          <h2>The Wage Gap</h2>
-          The <i>wage gap</i> pervades societies in America and around the world. It results from several factors, including gender, race and ethnicity, disability, access to education, and age.
-
-          <p></p>
-
-          <div class='row'>
-
-            <div class='col-lg-6'>
-              <h4>What is the wage gap?</h4>
-              On average, women and minorities earn less than men in every single occupation for which there is sufficient data provided. In 2018, women made only 82 cents to every dollar made by men (a gender wage gap of 18%). For minorities and women of color specifically, the wage gap is even wider. Since the Equal Pay Act was signed in 1963, the wage gap has been closing at an exceedingly slow rate. <i>(Note: Asians and other races are not included in this study due to lack of sufficient wage gap data.)</i>
-            </div>
-
-            <div class='col-lg-6'>
-              <h4>How is it calculated?</h4>
-              The wage gap for women is calculated by adding the annual salaries of women who work full-time, and finding the median salary. The pay gap is commonly reported as a percentage and compares the difference between figures for men and women. A similar process is used when calculating the wage gap for minority groups. 
-            </div>
-
-          </div>
-
-          <p></p>
-
-          <div class='row'>
-
-            <div class='col-lg-6'>
-              <h4>Why does it exist?</h4>
-              A large reason for the wage gap for women and minorities is attributed to discrimination in hiring and pay descions. They are constantly overlooked by employers who tend to favor white males. Moreover, women and minority-dominated industries tend to attract lower wages. Social pressure and bias often discourage members of these demographics from pursuing higher-paid, male-dominaated careers.
-            </div>
-
-            <div class='col-lg-6'>
-              <h4>How does COVID-19 come into play?</h4>
-              As a result of the economic shutdown and ensuing quarantine, many industries have been suffering. In particular, research shows that unemployment rates are rising faster for women and people of color. These demographics are overrepresented in industries that have been hit hardest by the pandemic, and are often at the top of company layoff lists. 
-            </div>
-
-          </div>
-
-          <p></p>
-
-          <div class='row'>
-
-          <!-- Male vs. Female -->
-            <div class='col-lg-6'>
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-line"></i>
-                  Male vs. Female</div>
-                  <div class="card-body">
-                    <canvas id="male_female"></canvas>
-                  </div>
-              </div>
-            </div>
-
-            <!-- White vs. Black vs. Hispanic -->
-            <div class='col-lg-6'>
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-line"></i>
-                  White vs. Black vs. Hispanic</div>
-                  <div class="card-body">
-                    <canvas id="white_black_hispanic"></canvas>
-                  </div>
-              </div>
-            </div>
-
-          </div>
-
-          Closing statement here. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
-
-          <hr>
-
-          <h2>Combining Two Economic Ideas</h2>
-          Talk about why we need to combine unemployment and wage gaps and analyze them together. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
-
-          <p></p>
-
-          <!-- DataTables Example -->
-          <div class='row'>
-
-            <div class='col-lg-7'>
-	            <div class="card mb-3">
-	              <div class="card-header">
-	                <i class="fas fa-table"></i>
-	                Employment Breakdown by Industry, Gender, and Race</div>
-	              <div class="card-body">
-	                <div class="table-responsive">
-	                  <table class="table table-bordered" id="industry_race" cellspacing="0">
-	                    <thead>
-	                      <tr>
-	                        <th>Industry</th>
-                          <th>Average Hourly Wage of Industry</th>
-	                        <th>% Women</th>
-	                        <th>% White</th>
-	                        <th>% Black</th>
-                          <th>% Hispanic</th>
-	                      </tr>
-	                    </thead>
-	                    <tbody>
-                        <tr>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                        </tr>
-	                      <tr>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                        </tr>
-                        <tr>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                        </tr>
-                        <tr>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                        </tr>
-                        <tr>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                        </tr>
-                        <tr>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                        </tr>
-                        <tr>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                          <td>Text</td>
-                        </tr>
-	                    </tbody>
-	                  </table>
-	                </div>
-	              </div>
-	            </div>
-            </div>
-
-            <div class="col-lg-5 d-flex flex-column flex-grow-1">
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-bar"></i>
-                  Average Hourly Wage by Gender, Race</div>
-                <div class="card-body">
-                  <canvas id="race_wage"></canvas>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-
-          
-          <div class='row'>
-
-            <!-- Most-Affected Industry Employment, determined by greatest % unemployment difference between February and April -->
-            <div class="col-lg-6">
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-pie"></i>
-                  Most-Affected Industry Employment</div>
-                <div class="card-body">
-                  <canvas id="employment_breakdown_highest"></canvas>
-                </div>
-              </div>
-            </div>
-
-            <!-- Least-Affected Industry Employment -->
-            <div class="col-lg-6">
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-pie"></i>
-                  Least-Affected Industry Employment</div>
-                <div class="card-body">
-                  <canvas id="employment_breakdown_lowest"></canvas>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <hr>
-
-          <h2>COVID-19 Impact Score</h2>
-
-          <div class='row'>
-
-            <!-- COVID-19 Impact Score Explanation -->
-            <div class='col-lg-6'>
-              COVID-19 Impact Score Explanation. Describe and show how to calculate impact schore and what it indicates about women and minorities. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
-            </div>
-
-            <!-- COVID-19 Impact Score -->
-            <div class='col-lg-6'>
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-bar"></i>
-                  COVID-19 Impact Scores by Gender, Race</div>
-                  <div class="card-body">
-                    <canvas id="impact_score"></canvas>
-                  </div>
-              </div>
-            </div>
-
-          </div>
-
-          Closing statement here. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
-
-          <hr>
-
-          <h2>Conclusions</h2>
-
-          Explain the (possible) correlations between industries facing the greatest unemployment rates and the wages of those industries. Connect these wages to the gender/race representations per industry and gender/race-specific hourly wages. For example, "leisure and hospitality," the industry that has sufferred the most economically due to COVID-19, also has a very low average wage of ____ (one of the lowest). From the % representation pie chart shown above, we see that this industry has a higher proportion of blacks, and this group has an average hourly wage of ____, whereas whites have a significantly higher hourly wage. Therefore, job losses will hurt this group more than others. Potential future work ideas: use wage gap data that breaks down minority races by gender as well. 
+          <i>Please head to <a href='unemployment.html' style='color: blue'><u>Unemployment Statistics and Visualizations</u></a> to learn more.</i>
 
         </div>
 

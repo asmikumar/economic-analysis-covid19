@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Economic Analysis COVID-19</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <div id="container"></div>
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+      <a class="navbar-brand mr-1" href="index.html">Economic Impacts of COVID-19</a>
+
+      	  <a class="nav-link" href="unemployment.html" style="color: darkgray">
+            <span>Unemployment Statistics and Visualizations</span>
+          </a>
+          <a class="nav-link" href="wage_gap.html" style="color: white">
+            <span>The Wage Gap</span>
+          </a>
+          <a class="nav-link" href="combination.html" style="color: darkgray">
+            <span>Combining Two Economic Ideas</span>
+          </a>
+    </nav>
+
+    <div id="wrapper">
+
+      <div id="content-wrapper">
+
+        <div class="container-fluid">
+
+          <h2>The Wage Gap</h2>
+          The <i>wage gap</i> pervades societies in America and around the world. It results from several factors, including gender, race and ethnicity, disability, access to education, and age.
+
+          <p></p>
+
+          <div class='row'>
+
+            <div class='col-lg-6'>
+              <h4>What is the wage gap?</h4>
+              On average, women and minorities earn less than men in every single occupation for which there is sufficient data provided. In 2018, women made only 82 cents to every dollar made by men (a gender wage gap of 18%). For minorities and women of color specifically, the wage gap is even wider. Since the Equal Pay Act was signed in 1963, the wage gap has been closing at an exceedingly slow rate. <i>(Note: Asians and other races are not included in this study due to lack of sufficient wage gap data.)</i>
+            </div>
+
+            <div class='col-lg-6'>
+              <h4>How is it calculated?</h4>
+              The wage gap for women is calculated by adding the annual salaries of women who work full-time, and finding the median salary. The pay gap is commonly reported as a percentage and compares the difference between figures for men and women. A similar process is used when calculating the wage gap for minority groups. 
+            </div>
+
+          </div>
+
+          <p></p>
+
+          <div class='row'>
+
+            <div class='col-lg-6'>
+              <h4>Why does it exist?</h4>
+              A large reason for the wage gap for women and minorities is attributed to discrimination in hiring and pay descions. They are constantly overlooked by employers who tend to favor white males. Moreover, women and minority-dominated industries tend to attract lower wages. Social pressure and bias often discourage members of these demographics from pursuing higher-paid, male-dominaated careers.
+            </div>
+
+            <div class='col-lg-6'>
+              <h4>How does COVID-19 come into play?</h4>
+              As a result of the economic shutdown and ensuing quarantine, many industries have been suffering. In particular, research shows that unemployment rates are rising faster for women and people of color. These demographics are overrepresented in industries that have been hit hardest by the pandemic, and are often at the top of company layoff lists. 
+            </div>
+
+          </div>
+
+          <p></p>
+
+          <div class='row'>
+
+          <!-- Male vs. Female -->
+            <div class='col-lg-6'>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-line"></i>
+                  Male vs. Female</div>
+                  <div class="card-body">
+                    <canvas id="male_female"></canvas>
+                  </div>
+              </div>
+            </div>
+
+            <!-- White vs. Black vs. Hispanic -->
+            <div class='col-lg-6'>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-line"></i>
+                  White vs. Black vs. Hispanic</div>
+                  <div class="card-body">
+                    <canvas id="white_black_hispanic"></canvas>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+
+          Closing statement here. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
+
+          <hr>
+
+          <i>Please head to <a href='combination.html' style='color: blue'><u>Combining Two Economic Ideas</u></a> to learn more.</i>
+
+        </div>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="graphs/unemployment_years.js"></script>
+    <script src="graphs/percent_increase.js"></script>
+    <script src="graphs/unemployment_months.js"></script>
+    <script src="graphs/male_female.js"></script>
+    <script src="graphs/white_black_hispanic.js"></script>
+    <script src="graphs/industry_race.js"></script>
+    <script src="graphs/race_wage.js"></script>
+    <script src="graphs/employment_breakdown_highest.js"></script>
+    <script src="graphs/employment_breakdown_lowest.js"></script>
+    <script src="graphs/impact_score.js"></script>
+
+  </body>
+
+</html>
