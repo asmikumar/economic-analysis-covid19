@@ -17,7 +17,7 @@ var unemployment_years = new Chart(ctx, {
             "01/2017", "", "", "", "", "", "", "", "", "", "", "",
             "01/2018", "", "", "", "", "", "", "", "", "", "", "",
             "01/2019", "", "", "", "", "", "", "", "", "", "", "",
-            "01/2020", "", "", "", "", "", "", "", "", "", "", ""],
+            "01/2020", "", "", "", "", ""],
     datasets: [
     {
       label: "Construction",
@@ -231,14 +231,14 @@ var unemployment_years = new Chart(ctx, {
           display: false
         },
         ticks: {
-          maxTicksLimit: 7
+          maxTicksLimit: 30
         }
       }],
       yAxes: [{
         ticks: {
           min: 0,
           max: 40,
-          maxTicksLimit: 11
+          maxTicksLimit: 9
         },
         gridLines: {
           color: "rgba(0, 0, 0, 0.1)",
