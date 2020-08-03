@@ -8,9 +8,13 @@ html {
   position: relative;
   min-height: 100%;
 }
-
-body {
+#contact {
+  padding-left: 5%;
+}
+#encapsule {
   height: 100%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 #wrapper {
@@ -24,6 +28,14 @@ body {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 80px;
+}
+
+#contact {
+  background-color: #cc0000;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  margin: 0;
 }
 
 body.fixed-nav #content-wrapper {
