@@ -11,6 +11,7 @@ var industry_unemployment_wage = new Chart(ctx, {
                 {
                 label: 'Scatter Dataset',
                 pointRadius: 5,
+                pointHoverRadius: 5,
                 pointBackgroundColor: ['green', 'red', 'green', 'black', 'red', 'black', 'green', 'red'],
                 data: [
                     { x: 201.8, y: 29.35 }, 
