@@ -63,7 +63,7 @@
           <div id="encapsule">
 
           <h2>Combining Two Economic Ideas</h2>
-          Talk about why we need to combine unemployment and wage gaps and analyze them together. Note that when retrieving average hourly wages, the data for nonsupervisory employees were taken to avoid skews.
+          Talk about why we need to combine unemployment and wage gaps and analyze them together. Note that when retrieving average hourly wages, the data for nonsupervisory employees were taken to avoid skews. On the scatter plot to the right, each dot corresponds to its respective color in the table.
 
           <p></p>
 
@@ -141,9 +141,18 @@
                 <div class="card-header">
                   <i class="fas fa-chart-line"></i>
                   Unemployment Quarterly Trends By Race, Gender (%)</div>
-                  <div class="card-body" style='height:300px'>
+                  <div class="card-body" style='height:400px'>
                     <canvas id="unemployment_quarterly"></canvas>
                   </div>
+              </div>
+
+          <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Percent Increases In Unemployment from Q4/2019 to Q2/2020 (%)</div>
+                <div class="card-body" style='height:400px'>
+                  <canvas id="unemployment_increases_quarterly"></canvas>
+                </div>
               </div>
 
           <div class='row'>
@@ -247,11 +256,11 @@
     <script src="graphs/white_black_hispanic.js"></script>
     <script src="graphs/industry_race.js"></script>
     <script src="graphs/race_wage.js"></script>
-
     <script src="graphs/employment_breakdown_highest.js"></script>
     <script src="graphs/employment_breakdown_lowest.js"></script>
     <script src="graphs/industry_unemployment_wage.js"></script>
     <script src="graphs/unemployment_quarterly.js"></script>
+    <script src="graphs/unemployment_increases_quarterly.js"></script>
 
   </body>
 
