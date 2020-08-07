@@ -36,7 +36,7 @@
     <div id="container"></div>
 
   </head>
-
+  <div id="encapsule">
   <body id="page-top">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
@@ -61,7 +61,7 @@
         <div class="container-fluid">
 
           <h2>Combining Two Economic Ideas</h2>
-          Talk about why we need to combine unemployment and wage gaps and analyze them together. Note that when retrieving average hourly wages, the data for nonsupervisory employees were taken to avoid skews.
+          Talk about why we need to combine unemployment and wage gaps and analyze them together. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
 
           <p></p>
 
@@ -79,41 +79,69 @@
 	                    <thead>
 	                      <tr>
 	                        <th>Industry</th>
-                          	<th>Average Hourly Wage (June 2020)</th>
+                          <th>Average Hourly Wage of Industry</th>
+	                        <th>% Women</th>
+	                        <th>% White</th>
+	                        <th>% Black</th>
+                          <th>% Hispanic</th>
 	                      </tr>
 	                    </thead>
 	                    <tbody>
-                        <tr style='background-color: #c3e6cb'>
-                          <td>Construction</td>
-                          <td>$29.35</td>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
                         </tr>
-                        <tr style='background-color: #f5c6cb'>
-                          <td>Education and Health Services</td>
-                          <td>$25.28</td>
-                        </tr>
-	                    <tr style='background-color: #c3e6cb'>
-                          <td>Financial Activities</td>
-                          <td>$29.01</td>
+	                      <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
                         </tr>
                         <tr>
-                          <td>Information</td>
-                          <td>$35.44</td>
-                        </tr>
-                        <tr style='background-color: #f5c6cb'>
-                          <td>Leisure and Hospitality</td>
-                          <td>$14.55</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
                         </tr>
                         <tr>
-                          <td>Manufacturing</td>
-                          <td>$22.61</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
                         </tr>
-                        <tr style='background-color: #c3e6cb'>
-                          <td>Professional and Business Services</td>
-                          <td>$29.32</td>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
                         </tr>
-                        <tr style='background-color: #f5c6cb'>
-                          <td>Retail Trade</td>
-                          <td>$18.06</td>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                        </tr>
+                        <tr>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
+                          <td>Text</td>
                         </tr>
 	                    </tbody>
 	                  </table>
@@ -122,27 +150,19 @@
 	            </div>
             </div>
 
-            <div class="col-lg-5">
+            <div class="col-lg-5 d-flex flex-column flex-grow-1">
               <div class="card mb-3">
                 <div class="card-header">
-                  <i class="fas fa-chart-area"></i>
-                  Unemployment Increase (%) vs. Average Hourly Wage ($)</div>
-                <div class="card-body d-flex flex-column flex-grow" style='height: 501.5px'>
-                  <canvas id="industry_unemployment_wage"></canvas>
+                  <i class="fas fa-chart-bar"></i>
+                  Average Hourly Wage by Gender, Race</div>
+                <div class="card-body">
+                  <canvas id="race_wage"></canvas>
                 </div>
               </div>
             </div>
-            
+
           </div>
 
-          <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-line"></i>
-                  Unemployment Quarterly Trends By Race, Gender (%)</div>
-                  <div class="card-body" style='height:300px'>
-                    <canvas id="unemployment_quarterly"></canvas>
-                  </div>
-              </div>
 
           <div class='row'>
 
@@ -203,7 +223,7 @@
 
           <h2>Conclusions</h2>
 
-          Explain the (possible) correlations between industries facing the greatest unemployment rates and the wages of those industries. Connect these wages to the gender/race representations per industry and gender/race-specific hourly wages. For example, "leisure and hospitality," the industry that has sufferred the most economically due to COVID-19, also has a very low average wage of ____ (one of the lowest). From the % representation pie chart shown above, we see that this industry has a higher proportion of blacks, and this group has an average hourly wage of ____, whereas whites have a significantly higher hourly wage. Therefore, job losses will hurt this group more than others. Potential future work ideas: use wage gap data that breaks down minority races by gender as well. 
+          Explain the (possible) correlations between industries facing the greatest unemployment rates and the wages of those industries. Connect these wages to the gender/race representations per industry and gender/race-specific hourly wages. For example, "leisure and hospitality," the industry that has sufferred the most economically due to COVID-19, also has a very low average wage of ____ (one of the lowest). From the % representation pie chart shown above, we see that this industry has a higher proportion of blacks, and this group has an average hourly wage of ____, whereas whites have a significantly higher hourly wage. Therefore, job losses will hurt this group more than others. Potential future work ideas: use wage gap data that breaks down minority races by gender as well.
 
         </div>
 
@@ -211,6 +231,10 @@
       <!-- /.content-wrapper -->
 
     </div>
+  </div>
+  <footer id="contact">
+    <p> &#9993; Contact us at @gmail.com</p>
+  </footer>
     <!-- /#wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -243,8 +267,7 @@
     <script src="graphs/race_wage.js"></script>
     <script src="graphs/employment_breakdown_highest.js"></script>
     <script src="graphs/employment_breakdown_lowest.js"></script>
-    <script src="graphs/industry_unemployment_wage.js"></script>
-    <script src="graphs/unemployment_quarterly.js"></script>
+    <script src="graphs/impact_score.js"></script>
 
   </body>
 

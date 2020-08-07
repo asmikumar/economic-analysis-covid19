@@ -1,55 +1,57 @@
-// Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
-// Area Chart Example
-var ctx = document.getElementById("male_female");
-var male_female = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
-    datasets: [{
-      label: "Sessions",
-      lineTension: false,
-      fill: false,
-      backgroundColor: "rgba(2,117,216,0.2)",
-      borderColor: "rgba(2,117,216,1)",
-      pointRadius: 5,
-      pointBackgroundColor: "rgba(2,117,216,1)",
-      pointBorderColor: "rgba(255,255,255,0.8)",
-      pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(2,117,216,1)",
-      pointHitRadius: 50,
-      pointBorderWidth: 2,
-      data: [10000, 20162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
-    }],
-  },
-  options: {
-    scales: {
-      xAxes: [{
-        time: {
-          unit: 'date'
-        },
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          maxTicksLimit: 7
-        }
-      }],
-      yAxes: [{
-        ticks: {
-          min: 0,
-          max: 40000,
-          maxTicksLimit: 5
-        },
-        gridLines: {
-          color: "rgba(0, 0, 0, .125)",
-        }
-      }],
-    },
-    legend: {
-      display: false
+var line_chart = document.getElementById("male_female");
+
+var dataFirst = {
+    label: "Median Male Pay Per Hour",
+    data: [20.97, 20.71, 21.04, 20.7, 20.9, 21.2, 21.07, 20.87, 20.43, 20.44,
+          20.06, 20.2, 20.29, 20.5, 20.57, 20.63, 19.92, 19.16, 19, 19.01, 19.05,
+          18.81, 18.91, 18.8, 19.11, 19.62, 20.07, 20.3, 20.44, 20.73, 20.8,
+          20.43, 19.97, 20.24, 20.33, 20.31, 20.88, 20.39, 19.89, 19.98, 19.78,
+          19.59, 20.26, 20.48, 20.78, 20.47, 21],
+    lineTension: 0,
+    fill: false,
+    borderColor: 'red'
+  };
+
+var dataSecond = {
+    label: "Median Female Pay Per Hour",
+    data: [13.19, 13, 13.18, 13.3, 13.2, 13.25, 13.35, 13.29, 13.36, 13.21, 13.45,
+          13.69, 13.78, 14.02, 14.2, 14.5, 14.4, 14.37, 14.59, 14.56, 14.82, 14.71,
+          14.68, 14.68, 14.96, 15.58, 15.51, 15.75, 16.07, 16.55, 16.71, 16.49, 16.39,
+          16.5, 16.55, 16.71, 17.1, 17.01, 16.89, 16.61, 16.48, 16.28, 16.66, 16.99,
+          17.2, 17.24, 17.84],
+    lineTension: 0,
+    fill: false,
+    borderColor: 'blue'
+  };
+
+
+
+var data = {
+  labels: ["1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982",
+          "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992",
+          "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002",
+          "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012",
+          "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
+  datasets: [dataFirst, dataSecond]
+};
+
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black'
     }
-  }
+  },
+
+};
+
+var white_black_hispanic = new Chart(line_chart, {
+  type: 'line',
+  data: data,
+  options: chartOptions
 });
