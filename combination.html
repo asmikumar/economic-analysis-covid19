@@ -301,13 +301,50 @@
 
           </div>
 
+          <hr>
+
+          <h3>Link to the Wage Gap</h3>
+          To connect our unemployment findings to the wage gap, we can investigate the average hourly wages of all genders and races. 
+
           <p></p>
+
+          <div class='row'>
+
+            <!-- Wages Gender -->
+            <div class="col-lg-6">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-bar"></i>
+                  Average Hourly Wages, Gender ($)</div>
+                <div class="card-body" style='height:400px'>
+                  <canvas id="wages_gender"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wages Race -->
+            <div class="col-lg-6">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-bar"></i>
+                  Average Hourly Wages, Race ($)</div>
+                <div class="card-body" style='height:400px'>
+                  <canvas id="wages_race"></canvas>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          The higher the pay of the industry, the less chance of unemployment, and the greater the wage gap, because the dominant race/gender will increase their money at a faster rate. We know unemployment can push people further back and exacerbate the wage gap even further. https://www.bls.gov/opub/ted/2011/ted_20110216.htm
 
           Closing statement here. [INSERT TEXT BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH]
 
           <hr>
 
           <h2>COVID-19 Impact Conclusions</h2>
+
+          The <i>New York Times</i> describes that we can estimate economic impact using two factors: wage and percent representation, where lower wages and greater minority representation may correlate with the level of negative economic impact caused by COVID-19. With this statement, we can see that 
 
           Explain the (possible) correlations between industries facing the greatest unemployment rates and the wages of those industries. Connect these wages to the gender/race representations per industry and gender/race-specific hourly wages. For example, "leisure and hospitality," the industry that has sufferred the most economically due to COVID-19, also has a very low average wage of ____ (one of the lowest). From the % representation pie chart shown above, we see that this industry has a higher proportion of blacks, and this group has an average hourly wage of ____, whereas whites have a significantly higher hourly wage. Therefore, job losses will hurt this group more than others. Potential future work ideas: use wage gap data that breaks down minority races by gender as well.
 
@@ -362,6 +399,8 @@
     <script src="graphs/leisure_hospitality_gender.js"></script>
     <script src="graphs/retail_trade_gender.js"></script>
     <script src="graphs/education_health_gender.js"></script>
+    <script src="graphs/wages_gender.js"></script>
+    <script src="graphs/wages_race.js"></script>
 
   </body>
 
