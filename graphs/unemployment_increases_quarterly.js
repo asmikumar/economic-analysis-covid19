@@ -7,11 +7,11 @@ var ctx = document.getElementById("unemployment_increases_quarterly");
 var unemployment_increases_quarterly = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["White", "Black", "Hispanic", "Women"],
+    labels: ["White", "Black", "Hispanic", "Women", "Men"],
     datasets: [
         {
-            backgroundColor: ["rgba(0,153,255,1)", "rgba(102,102,204,1)", "rgba(255,204,0,1)", "rgba(255,51,0,1)"],
-            data: [281.3,191.1,304.8,302.9]
+            backgroundColor: ["rgba(0,153,255,1)", "rgba(102,102,204,1)", "rgba(255,204,0,1)", "rgba(255,51,0,1)", "rgba(102,204,0,1)"],
+            data: [281.3,191.1,304.8,302.9, 245.7]
         }
     ],
   },
