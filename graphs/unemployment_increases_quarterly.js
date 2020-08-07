@@ -8,7 +8,6 @@ var unemployment_increases_quarterly = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: ["White", "Black", "Hispanic", "Women"],
-    
     datasets: [
         {
             backgroundColor: ["rgba(0,153,255,1)", "rgba(102,102,204,1)", "rgba(255,204,0,1)", "rgba(255,51,0,1)"],

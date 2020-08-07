@@ -157,31 +157,85 @@
 
           <div class='row'>
 
-            <!-- Most-Affected Industry Employment, determined by greatest % unemployment difference between February and April -->
-            <div class="col-lg-6">
+            <!-- Leisure and Hospitality Race -->
+            <div class="col-lg-4">
               <div class="card mb-3">
                 <div class="card-header">
                   <i class="fas fa-chart-pie"></i>
-                  Most-Affected Industry Employment</div>
-                <div class="card-body">
-                  <canvas id="employment_breakdown_highest"></canvas>
+                  Leisure and Unemployment, Race (%)</div>
+                <div class="card-body" style='height:300px'>
+                  <canvas id="leisure_hospitality_race"></canvas>
                 </div>
               </div>
             </div>
 
-            <!-- Least-Affected Industry Employment -->
-            <div class="col-lg-6">
+            <!-- Retail Trade Race -->
+            <div class="col-lg-4">
               <div class="card mb-3">
                 <div class="card-header">
                   <i class="fas fa-chart-pie"></i>
-                  Least-Affected Industry Employment</div>
-                <div class="card-body">
-                  <canvas id="employment_breakdown_lowest"></canvas>
+                  Retail Trade, Race (%)</div>
+                <div class="card-body" style='height:300px'>
+                  <canvas id="retail_trade_race"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education and Health Services Race -->
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Education and Health Services, Race (%)</div>
+                <div class="card-body" style='height:300px'>
+                  <canvas id="education_health_race"></canvas>
                 </div>
               </div>
             </div>
 
           </div>
+
+          <div class='row'>
+
+            <!-- Leisure and Hospitality Gender-->
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Leisure and Unemployment, Gender (%)</div>
+                <div class="card-body" style='height:300px'>
+                  <canvas id="leisure_hospitality_gender"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- Retail Trade Gender -->
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Retail Trade, Gender (%)</div>
+                <div class="card-body" style='height:300px'>
+                  <canvas id="retail_trade_gender"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education and Health Services Gender -->
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Education and Health Services, Gender (%)</div>
+                <div class="card-body" style='height:300px'>
+                  <canvas id="education_health_gender"></canvas>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+         <i>Note: in both sets of pie graphs, the percentages may not add up to one hundred due to exclusion of all other races and ethnicities, multi-raciality, and rounding.</i>
 
           <hr>
 
@@ -261,6 +315,12 @@
     <script src="graphs/industry_unemployment_wage.js"></script>
     <script src="graphs/unemployment_quarterly.js"></script>
     <script src="graphs/unemployment_increases_quarterly.js"></script>
+    <script src="graphs/leisure_hospitality_race.js"></script>
+    <script src="graphs/retail_trade_race.js"></script>
+    <script src="graphs/education_health_race.js"></script>
+    <script src="graphs/leisure_hospitality_gender.js"></script>
+    <script src="graphs/retail_trade_gender.js"></script>
+    <script src="graphs/education_health_gender.js"></script>
 
   </body>
 

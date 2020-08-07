@@ -7,7 +7,8 @@ var ctx = document.getElementById("industry_unemployment_wage");
 var industry_unemployment_wage = new Chart(ctx, {
   type: 'scatter',
   data: {
-            datasets: [{
+            datasets: [
+                {
                 label: 'Scatter Dataset',
                 pointRadius: 5,
                 pointBackgroundColor: ['green', 'red', 'green', 'black', 'red', 'black', 'green', 'red'],
@@ -21,7 +22,8 @@ var industry_unemployment_wage = new Chart(ctx, {
                     { x: 122.7, y: 29.32 }, 
                     { x: 431.4, y: 18.06 }
                 ]
-            }]
+                }
+            ]
         },
         options: {
           responsive: true,
