@@ -12,7 +12,8 @@ var dataFirst = {
           19.59, 20.26, 20.48, 20.78, 20.47, 21],
     lineTension: 0,
     fill: false,
-    borderColor: 'red'
+    borderColor: "rgba(102,204,0,1)",
+    backgroundColor: "rgba(102,204,0,0.2)"
   };
 
 var dataSecond = {
@@ -24,7 +25,8 @@ var dataSecond = {
           17.2, 17.24, 17.84],
     lineTension: 0,
     fill: false,
-    borderColor: 'blue'
+    borderColor: "rgba(255,51,0,1)",
+    backgroundColor: "rgba(255,51,0,0.2)"
   };
 
 
@@ -43,14 +45,13 @@ var chartOptions = {
     display: true,
     position: 'top',
     labels: {
-      boxWidth: 80,
       fontColor: 'black'
     }
   },
 
 };
 
-var white_black_hispanic = new Chart(line_chart, {
+var male_female = new Chart(line_chart, {
   type: 'line',
   data: data,
   options: chartOptions

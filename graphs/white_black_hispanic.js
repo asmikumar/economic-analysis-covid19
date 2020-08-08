@@ -12,7 +12,8 @@ var dataFirst = {
           19.86, 19.86, 20.42, 20.59, 20.86, 20.94, 21.32],
     lineTension: 0,
     fill: false,
-    borderColor: 'red'
+    borderColor: "rgba(0,153,255,1)",
+    backgroundColor: "rgba(0,153,255,0.2)"
   };
 
 var dataSecond = {
@@ -24,7 +25,8 @@ var dataSecond = {
           15.39, 15.07, 15.19, 15.86, 15.59, 15.59, 16.12],
     lineTension: 0,
     fill: false,
-    borderColor: 'blue'
+    borderColor: "rgba(102,102,204,1)",
+    backgroundColor: "rgba(0102,102,204,0.2)"
   };
 
   var dataThird = {
@@ -36,7 +38,8 @@ var dataSecond = {
             13.74, 14.01, 14.42, 14.99, 15.54, 15.31, 15.89],
       lineTension: 0,
       fill: false,
-      borderColor: 'green'
+      borderColor: "rgba(255,204,0,1)",
+      backgroundColor: "rgba(255,204,0,0.2)"
     };
 
 var data = {
@@ -53,7 +56,6 @@ var chartOptions = {
     display: true,
     position: 'top',
     labels: {
-      boxWidth: 80,
       fontColor: 'black'
     }
   },
